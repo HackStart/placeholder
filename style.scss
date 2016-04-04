@@ -1,0 +1,103 @@
+body {
+  background-color: black;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+}
+
+.header {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  box-sizing: border-box;
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,1));
+
+  video {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+  }
+
+  .title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+
+    h1 {
+      width: 25em;
+    }
+
+    h2 {
+      font-size: 2em;
+      font-weight: 300;
+      margin-bottom: 0;
+    }
+
+    p {
+      padding: 0 10em;
+      margin-top: .5em;
+      a {
+        color: lightblue;
+        &:visited {
+          color: darken(lightblue, 10);
+        }
+        &:hover {
+          color: darken(lightblue,20);
+        }
+      }
+    }
+  }
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style: none;
+    display: inline-block;
+    padding: 0 5px;
+
+    a,
+    a:active,
+    a:hover,
+    a:link {
+      text-decoration: none;
+    }
+
+    a {
+      display: block;
+      color: white;
+      border-radius: 0.8em;
+      vertical-align: middle;
+      padding: 0.5em 1.5em;
+
+      &.contact {
+        background-color: #3498DB;
+
+        &:hover {
+          background-color: darken(#3498DB, 10);
+        }
+      }
+
+      &.hackathon {
+        background-color: #EF5451;
+
+        &:hover {
+          background-color: darken(#EF5451, 10);
+        }
+      }
+    }
+  }
+}
+
+a,
+a:active,
+a:hover,
+a:link {
+  transition: 0.2s;
+}
