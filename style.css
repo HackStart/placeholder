@@ -1,6 +1,9 @@
+html, body {
+  overflow: hidden;
+}
+
 body {
   background-color: black;
-  overflow: hidden;
   font-family: 'Roboto', sans-serif;
   color: white; }
 
